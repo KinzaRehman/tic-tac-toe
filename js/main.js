@@ -9,8 +9,13 @@ Please make the game as OOP as possible.
 
 
 /* 
-step 1: Create the two players
+step 1: Determine where i can create objects
+    -my players (2)
+    -my game (clicking until we either run out of boxes = tie, or win = 3 in a row)
+
 step 2: User interaction (OOP)
+    How many players do i need?
+        two players so player 1[X] and player 2[O]
     Wh goes first? 
         -traditional, X foes first and other one is assined O
     What happens if X or O wins?
@@ -27,6 +32,7 @@ step 3: Which array patters determine the win?
     total win patterns within the array is 8? 
 Step 4: if the person wins it should mention thier win in the DOM(document Object model):
     ex: document.write(" play ${playerXwin} won!") idk
+
 Step 5: if theres one player then it shoul duse an API and have a computer play against the user
 if i complete the basics on time then integrate step 5 else just simple
 */
