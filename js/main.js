@@ -32,7 +32,7 @@ if i complete the basics on time then integrate step 5 else just simple
 */
 
 
-//My players class , thier nam player x, player Y, with thier makrts tic tac toe X, O
+//My players class , thier name player x, player Y, with thier makrts tic tac toe X, O
 class Player{
     constructor(name, logo) {
         this.name = name;
@@ -85,6 +85,8 @@ class play {
             const ties = document.getElementById("tieScore")
             ties.textContent = Number(ties.textContent) + 1; 
 
+            document.getElementById("WinMessage").textContent = 'It is a tie'
+
         } else {
             this.switchPlayer();
         }
@@ -113,6 +115,7 @@ class play {
         this.cells.forEach(cell => cell.textContent = "")
         this.endGame = false; 
         this.currentPlayer = this.playerX
+        document.getElementById("WinMessage").textContent = ""
     }
 }
     const game = new play(playerX, playerO)
